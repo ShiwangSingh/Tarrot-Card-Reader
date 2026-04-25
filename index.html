@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Tarot | Discover Your Destiny</title>
+    <meta name="description" content="Experience a mystical tarot reading session. Discover the meaning of your past, present, and future.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="stars-container"></div>
+    <main class="app-container">
+        <header class="hero-section">
+            <h1 class="glow-text">Mystic Tarot</h1>
+            <p class="subtitle">Unveil the secrets of your Past, Present, and Future</p>
+        </header>
+
+        <section id="reading-area" class="reading-area">
+            <div id="deck-container" class="deck-container">
+                <button id="start-reading-btn" class="primary-btn">Start Reading</button>
+            </div>
+            
+            <div id="cards-display" class="cards-display hidden">
+                <div class="card-slot" id="slot-past">
+                    <h3 class="slot-title">Past</h3>
+                    <div class="card-wrapper" data-position="past"></div>
+                </div>
+                <div class="card-slot" id="slot-present">
+                    <h3 class="slot-title">Present</h3>
+                    <div class="card-wrapper" data-position="present"></div>
+                </div>
+                <div class="card-slot" id="slot-future">
+                    <h3 class="slot-title">Future</h3>
+                    <div class="card-wrapper" data-position="future"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interpretation-panel" class="interpretation-panel hidden">
+            <h2 class="panel-title">Your Reading</h2>
+            <div id="reading-details" class="reading-details"></div>
+            <div id="reading-summary" class="reading-summary"></div>
+            <button id="reset-btn" class="secondary-btn">New Reading</button>
+        </section>
+    </main>
+
+    <script src="js/cards.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
